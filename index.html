@@ -2,18 +2,25 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-
-    <title>Develop Camp Portfolio</title>
-
-    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <title>Develop Camp Portfolio</title>
   </head>
 
   <body>
     <!-- Header -->
-    <header>
+    <!-- <header>
       <div class="nav-container">
         <ul class="nav-menu">
           <li class="header-logo">Ilda Rodriguez</li>
@@ -22,78 +29,122 @@
           <li class="nav-item">Contact</li>
         </ul>
       </div>
-    </header>
+    </header> -->
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"></a>
+          <ul class="medias right">
+              <li><a class="black-text" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="black-text " href="https://www.linkedin.com/in/ilda-rodriguez-038662160/"><i class="fab fa-linkedin"></i></a></li>
+              <li><a class="black-text " href="https://twitter.com/IldaWebdev"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="black-text" href="https://github.com/Rodriguez32"><i class="fab fa-github"></i></a></li>
+            </ul>
+          
+        </div>
+        <div class="nav-content center">
+          <span class="nav-title ">Ilda Rodriguez</span>
+          <!-- <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal"> -->
+            <!-- <i class="material-icons">add</i> -->
+          </a>
+        </div>
+      </nav>
+
+      <nav>
+          <div class="nav-wrapper">
+              <a href="Resume.pdf" class="resume-text">Resume</a>
+              <ul class="right section table-of-contents">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                </ul>
+
+           
+           
+          </div>
+        </nav>
     <!-- End of header -->
 
     <main>
       <!-- About me -->
+      <div class="row">
+          <!-- <div class="col s12 m9 l10"> -->
       <div class="about-container">
-        <div class="about-text">
+        <div classe="section">
+        <div class="about-text" id="about" class="section scrollspy">
+            
           <h2 class="heading">About me</h2>
-          <img class="heading-img" src="images/ilda.jpg">
+          <img class="heading-img" src="images/sitting.jpg">
           <p>
-            I have been a bookeeper at our family business since 2011. Although,
-            coding is new to me. I am eager to work in this field because I like
-            to learn, build and make things work. I live in the Northwest side
-            of Chicago. As a mother of two, my schedule changes daily. From
-            school to activities or doctor appointments.
-            <br />My kids motivate and inspire me. I feel the need to keep
-            growing professionally and teaching my children we can all reach our
-            goals. On my spare time I like to read, bake and experiment with new
-            recipes. I also enjoy jewelry making,excercise and practicing
-            mindfulness meditation.
+              Ilda Rodriguez is a Mom's Can Code School student who is training to become a front-end developer. 
+              Ilda is inspired by art and design to build responsive and easy to use websites. 
+              Ilda is a mother of two, and lives with her family in Chicago, Illinois. 
+              <br/>On her spare time she likes to read, bake, experiment with new
+              recipes, jewelry making,excercise and practicing mindfulness meditation.
+            
           </p>
+          <p>One-goal, one-passion - Programming ~ By Veeshi McMillan</p>
         </div>
       </div>
+      </div>
+      <div class="divider"></div>
 
       <!-- Projects -->
-
+      <div class="section">
       <div class="project-container">
-        <h2 class="heading">Projects</h2>
-        <div class="project-gallery">
+        <div class="project-gallery" id="projects" class="section scrollspy">
+            <h2 class="heading">Projects</h2>
           <figure>
-            <img class="project-img" src="images/emailnews.PNG" />
+            <img class="project-img" href="https://rodriguez32.github.io/Newsletter_Cohort2/" src="images/emailnews.PNG" />
             <figcaption>Email Newsletter</figcaption>
+          </figure>
+<!-- Link images needs work -->
+          <figure>
+            <img class="project-img2" href="https://authenticy-grace.herokuapp.com/" src="images/Authentic-G.PNG" />
+            <figcaption>Authentic Grace Boutique Website </figcaption>
           </figure>
 
-          <figure>
+          <!-- <figure>
             <img class="project-img" src="images/emailnews.PNG" />
             <figcaption>Email Newsletter</figcaption>
-          </figure>
-
-          <figure>
-            <img class="project-img" src="images/emailnews.PNG" />
-            <figcaption>Email Newsletter</figcaption>
-          </figure>
+          </figure> -->
         </div>
+        <div class="divider"></div>
+      </div>
       </div>
 
       <!-- Skills -->
 
       <div class="skills-container">
-          <div class="about-skills">
-              <div class="heading">Skills</div>
-              <ul class="skills-menu">
-                  <li class="skills-list">HTML</li>
-                  <li class="skills-list">CSS</li>
-                  <li class="skills-list">JAVASCRIPT</li>
-              </ul>
+          <div class="about-skills" id="skills" class="section scrollspy">
+              <ul class="collection with-header">
+                  <li class="collection-header brown-text amber lighten-4"><h4>Skills</h4></li>
+                  <li class="collection-item amber-text">HTML</li>
+                  <li class="collection-item amber-text">CSS</li>
+                  <li class="collection-item amber-text">JAVASCRIPT</li>
+                  <li class="collection-item amber-text">GITHUB</li>
+                  <li class="collection-item amber-text">MATERIALIZE CSS</li>
+                </ul>
           </div>
+          <div class="divider"></div>
       </div>
-<footer>
-    <div class="footer-container">
+          
+      </div>
+<footer class="footer-container">
+    <!-- <div class="footer-container">
         <h2 class="heading">Contact</h2>
         <ul class="contact-menu">
             <li class="contact-info" id="email">ildarodriguez2018@u.northwestern.edu</li>
-            <li class="contact-info" id="github"><a href="#">Github</a></li>
+            <li class="contact-info" id="github"><a href="#"><i class="fab fa-github"></i>Github</a></li>
             
-            <li class="contact-info" id="twitter"><a href="#">Twitter</a></li>
-            <li class="contact-info" id="instagram"><a href="#">Instagram</a></li>
+            <li class="contact-info" id="twitter"><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li class="contact-info" id="instagram"><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
         </ul>
-    </div>
+    </div> -->
 
-    <div class="container">
-            © 2018 Copyright Ilda Rodriguez
+    
+    <div class="container center ">
+            © 2019 - Ilda Rodriguez - All Rights Reserved
             </div>
 
 </footer>

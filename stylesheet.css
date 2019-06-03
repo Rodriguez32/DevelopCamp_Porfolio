@@ -12,15 +12,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-container {
+.nav-wrapper {
     background-color: rgb(235, 182, 137);
-    width: 100%;
-    height: 50px;
+    /* width: 100%;
+    height: 50px; */
 }
 
 .nav-menu {
     list-style: none;
     color: #fff;
+}
+
+.nav-content{
+    padding: 10px;
+    background-color: rgb(235, 182, 137);
+    font-family: 'Lobster', cursive;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .header-logo {
@@ -43,10 +50,12 @@ body {
     position: relative;
     margin: 40px 50px;
     border-bottom: 2px solid #dee7ec;
+    font-family: 'Lobster', cursive;
 }
 
 .heading {
     font-size: 2em;
+    padding: 10px;
 }
 
 .heading-img {
@@ -69,6 +78,7 @@ body {
     position: relative;
     margin-bottom: 2%;
     background-color: lightgoldenrodyellow;
+    font-family: 'Lobster', cursive;
 }
 
 .project-gallery {
@@ -86,16 +96,38 @@ figure {
     border-bottom: 2px solid #dee7ec;
 }
 
-.project-img:hover {
+.project-img2 {
+    margin-top: 50px;
+    width: 200px;
+    height: 205px;
+}
+
+.project-img, .project-img2:hover {
     cursor: pointer;
 }
 
 .skills-container {
     text-align: center;
     padding: 10px 80px;
+    font-family: 'Lobster', cursive;
 }
 
 .skills-list {
     list-style: none;
 
+}
+
+.contact-menu{
+    list-style: none;
+}
+
+.resume-text{
+    font-size: 2em;
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+}
+
+.footer-container {
+    background-color: rgb(235, 182, 137);
+    font-family: 'Lobster', cursive;
 }
