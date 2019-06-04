@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  
+    
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -20,21 +20,12 @@
 
   <body>
     <!-- Header -->
-    <!-- <header>
-      <div class="nav-container">
-        <ul class="nav-menu">
-          <li class="header-logo">Ilda Rodriguez</li>
-          <li class="nav-item">About me</li>
-          <li class="nav-item">Projects</li>
-          <li class="nav-item">Contact</li>
-        </ul>
-      </div>
-    </header> -->
+    
     <nav class="nav-extended">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo"></a>
           <ul class="medias right">
-              <li><a class="black-text" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="black-text" href="https://www.instagram.com/ilda_webdev/"><i class="fab fa-instagram"></i></a></li>
               <li><a class="black-text " href="https://www.linkedin.com/in/ilda-rodriguez-038662160/"><i class="fab fa-linkedin"></i></a></li>
               <li><a class="black-text " href="https://twitter.com/IldaWebdev"><i class="fab fa-twitter"></i></a></li>
               <li><a class="black-text" href="https://github.com/Rodriguez32"><i class="fab fa-github"></i></a></li>
@@ -49,18 +40,26 @@
         </div>
       </nav>
 
-      <nav>
+
+     
+      <ul id="dropdown1" class="dropdown-content">
+          <li><a class="orange-text" href="#!">HTML5</a></li>
+          <li><a class="orange-text" href="#!">CSS</a></li>
+          <li><a class="orange-text" href="#!">Javascript</a></li>
+          <!-- <li class="divider"></li> -->
+          <li><a class="orange-text" href="#!">Git/Github</a></li>
+          <!-- <li><a href="#!">Materialize CSS</a></li> -->
+        </ul>
+        <nav>
           <div class="nav-wrapper">
               <a href="Resume.pdf" class="resume-text">Resume</a>
               <ul class="right section table-of-contents">
                   <li><a href="#about">About</a></li>
                   <li><a href="#projects">Projects</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#blog">Blog</a></li>
+                  <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Skills<i class="material-icons right">arrow_drop_down</i></a></li>
+                  <li><a href="#blogs">Blog</a></li>
+                  
                 </ul>
-
-           
-           
           </div>
         </nav>
     <!-- End of header -->
@@ -90,7 +89,44 @@
       <div class="divider"></div>
 
       <!-- Projects -->
-      <div class="section">
+      <h2 class="heading center">Projects</h2>
+            <div class="row">
+                <div class="project-gallery" id="projects" class="section scrollspy">
+              <div class="col s3">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/emailnews.PNG">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Email Newsletter<i class="material-icons right">more_vert</i></span>
+              <p><a class="orange-text" href="https://rodriguez32.github.io/Newsletter_Cohort2/">View page</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/Authentic-G.PNG">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Authentic Grace Website<i class="material-icons right">more_vert</i></span>
+                  <p><a class="orange-text" href="#">Github Link</a></p> <a class="orange-text" href="https://authenticy-grace.herokuapp.com/">Heroku Link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+            </div>
+            <div class="divider"></div>
+      <!-- <div class="section">
       <div class="project-container">
         <div class="project-gallery" id="projects" class="section scrollspy">
             <h2 class="heading">Projects</h2>
@@ -98,25 +134,26 @@
             <img class="project-img" href="https://rodriguez32.github.io/Newsletter_Cohort2/" src="images/emailnews.PNG" />
             <figcaption>Email Newsletter</figcaption>
           </figure>
-<!-- Link images needs work -->
-          <figure>
+Link images needs work -->
+          <!-- <figure>
             <img class="project-img2" href="https://authenticy-grace.herokuapp.com/" src="images/Authentic-G.PNG" />
             <figcaption>Authentic Grace Boutique Website </figcaption>
-          </figure>
+          </figure> -->
 
           <!-- <figure>
             <img class="project-img" src="images/emailnews.PNG" />
             <figcaption>Email Newsletter</figcaption>
           </figure> -->
-        </div>
+        <!-- </div>
         <div class="divider"></div>
       </div>
-      </div>
+      </div> --> 
 
       <!-- Skills -->
 
-      <div class="skills-container">
+      <!-- <div class="skills-container">
           <div class="about-skills" id="skills" class="section scrollspy">
+              
               <ul class="collection with-header">
                   <li class="collection-header brown-text amber lighten-4"><h4>Skills</h4></li>
                   <li class="collection-item amber-text">HTML</li>
@@ -127,7 +164,72 @@
                 </ul>
           </div>
           <div class="divider"></div>
-      </div>
+      </div> -->
+
+      <!-- Blog -->
+      <h2 class="heading center">Blog</h2>
+      <div class="row">
+          <div class="blog-gallery" id="blogs" class="section scrollspy">
+          <div class="col s3">
+            <div class="card amber lighten-4">
+              <div class="card-content brown-text">
+                <span class="card-title">Online Collaboration Tools</span>
+                <p>Learning how to work as a team?
+                  Here are 3 tools that can help get a project started. </p>
+              </div>
+              <div class="card-action">
+                <a href="#">Blog coming soon</a>
+                <!-- <a href="#">This is a link</a> -->
+              </div>
+            </div>
+          </div>
+          
+              <div class="col s3">
+                <div class="card amber lighten-4">
+                  <div class="card-content brown-text">
+                    <span class="card-title">How to create a Github Repository</span>
+                    <p>A small overview of what Github is. And basics steps to get you
+                      started on a Github Repo.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Blog coming soon</a>
+                    <!-- <a href="#">This is a link</a> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s3">
+                  <div class="card amber lighten-4">
+                    <div class="card-content brown-text">
+                      <span class="card-title">Materialize CSS- Get Setup</span>
+                      <p>How to get started with Materilize CSS. Using the CDN link is quick and easy.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Blog coming soon</a>
+                      <!-- <a href="#">This is a link</a> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s3">
+                    <div class="card amber lighten-4">
+                      <div class="card-content brown-text">
+                        <span class="card-title">Upload Resume to HTML</span>
+                        <p>Using Google docs you can download resume as a pdf. Then easily Upload
+                          to your HTML. 
+                        </p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">Blog coming soon</a>
+                        <!-- <a href="#">This is a link</a> -->
+                      </div>
+                    </div>
+                  </div>
+              
+          </div>
+            </div>
+            <div class="divider"></div>
           
       </div>
 <footer class="footer-container">
@@ -151,6 +253,10 @@
 
     </main>
     <!-- End of main -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+  <script src="main.js"></script>
   </body>
   <!-- End of body -->
 </html>

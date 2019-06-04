@@ -30,21 +30,6 @@ body {
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
-.header-logo {
-    font-size: 2em;
-    display: inline;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.nav-item {
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-.nav-item:hover {
-    font-size: 1.2em;
-    cursor: pointer;
-}
 
 .about-container {
     position: relative;
@@ -73,11 +58,17 @@ body {
     
 }
 
+h2 {
+    color: rgb(85, 83, 83);
+    font-size: 1.2em;
+    font-family: 'Lobster', cursive;
+}
+
 .project-container {
     text-align: center;
     position: relative;
     margin-bottom: 2%;
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
     font-family: 'Lobster', cursive;
 }
 
@@ -85,9 +76,6 @@ body {
     border-bottom: 2px solid #dee7ec;
 }
 
-figure {
-    display: inline-block;
-}
 
 .project-img {
     margin-top: 30px;
@@ -112,19 +100,17 @@ figure {
     font-family: 'Lobster', cursive;
 }
 
-.skills-list {
-    list-style: none;
-
-}
-
-.contact-menu{
-    list-style: none;
-}
 
 .resume-text{
     font-size: 2em;
     padding: 10px;
     font-family: 'Lobster', cursive;
+}
+
+.collection with-header {
+    margin-top: 30px;
+    width: 200px;
+    height: auto;
 }
 
 .footer-container {
