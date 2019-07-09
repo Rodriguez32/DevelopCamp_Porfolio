@@ -27,6 +27,7 @@ body {
     padding: 10px;
     background-color: rgb(235, 182, 137);
     font-family: 'Lobster', cursive;
+   
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
@@ -37,7 +38,7 @@ body {
     position: relative;
     margin: 40px 50px;
     border-bottom: 2px solid #dee7ec;
-    font-family: 'Lobster', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .heading {
@@ -63,7 +64,7 @@ body {
 h2 {
     color: rgb(85, 83, 83);
     font-size: 1.2em;
-    font-family: 'Lobster', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .project-container {
@@ -106,7 +107,7 @@ h2 {
 .resume-text{
     font-size: 2em;
     padding: 10px;
-    font-family: 'Lobster', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .collection with-header {
